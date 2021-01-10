@@ -1,0 +1,7 @@
+{
+  "name": "prueba-resolver",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
