@@ -11,6 +11,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'blocking-resolver',
+    loadChildren: () => import('./blocking-resolver/blocking-resolver.module').then( m => m.BlockingResolverPageModule)
+  },
+  {
+    path: 'non-blocking-resolver',
+    loadChildren: () => import('./non-blocking-resolver/non-blocking-resolver.module').then( m => m.NonBlockingResolverPageModule)
+  },
 ];
 
 @NgModule({
